@@ -1,0 +1,52 @@
+@import '../../styles/globalSass/variable.scss';
+
+.mainBanner{
+    display: flex;
+    margin-top: 7rem;
+    @media only screen and (max-width:$media-mobile){
+        flex-direction: column-reverse;
+    margin-top: 4.8rem;
+    justify-content: space-between;
+    }
+
+    .contentSec {
+        width: 30%;
+        min-height: 352px;
+        text-align: center;
+        background: #1B252C;
+        color: #fff;
+        font-family: "Muli";
+        font-size: 48px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &::after {
+            width: 102px;
+            height: 8px;
+            background-color: #1363DF;
+            content: "";
+            bottom: 100px;
+            margin: 0 auto;
+            position: absolute;
+            @media only screen and (max-width:$media-mobile){
+                bottom: 20px;
+            }
+          }
+        @media only screen and (max-width:$media-mobile){
+            width: 100%;
+            margin:  0;
+            min-height: 15rem;
+            font-size: 2.4rem;
+            display: none;
+        }
+      }
+
+      .image-Wrap {
+        width: 70%;
+        @media only screen and (max-width:$media-mobile){
+            width: 100%;
+        }
+      }
+}

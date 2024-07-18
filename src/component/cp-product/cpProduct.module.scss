@@ -1,0 +1,117 @@
+@import '../../styles/globalSass/variable.scss';
+
+
+.product-wrap{
+    margin: 5rem 0 10rem;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0rem auto;
+        @media only screen and (max-width:$media-mobile){
+            flex-direction: column;
+            width: 100%;
+        }    
+    }
+}
+
+.product-sec{
+    width: 84%;
+    padding-left: 4.3rem;
+    @media only screen and (max-width:$media-mobile){
+        width: 100%;
+        padding-left: 2rem;
+    }
+    .product-list{
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+    .product-item{
+      width: 30%;
+      margin-right: 2.3rem;
+      margin-bottom: 2rem;
+      @media only screen and (max-width:$media-mobile){
+        width: 45%;
+        margin-right: 1rem;
+      }
+      .product-title{
+        font-size: 2rem;
+        color: #172026;
+        font-family: $font-semiBold;
+        margin: 0;
+      }
+      .product-price{
+        font-size: 1.4rem;
+        color: #172026;
+        font-family: $font-semiBold;
+        margin: 0;
+      }
+      .product-img{
+        width: 100%;
+        @media only screen and (max-width:$media-mobile){
+          object-fit: contain;
+        }
+      }
+    }
+    .product-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        @media only screen and (max-width:$media-mobile){
+            flex-direction: column-reverse;
+        }
+      }
+      .product-result {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        color: #172026;
+        font-family: "Muli-SemiBold";
+      }
+      .product-top-list {
+        display: flex;
+        justify-content: space-between;
+      }
+      .product-list-icon {
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 2rem;
+        display: none;
+        @media only screen and (max-width:$media-mobile){
+            display: flex;
+        }
+      }
+      .icon-img {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: 1rem;
+      }
+      .product-sort {
+        position: relative;
+        width: 25.4rem;
+        @media only screen and (max-width:$media-mobile){
+            width: auto;
+        }
+      }
+      .hide-product{
+        display: none;
+      }
+      .product-select {
+        width: 100%;
+        border: 1px solid #B5B7BC;
+        border-radius: 0.8rem;
+        padding: 0.5rem 1rem;
+        background: #FFFFFF;
+        color: #172026;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        outline: none;
+        cursor: pointer;
+        @media only screen and (max-width:$media-mobile){
+            border: 0;
+            padding: 0;
+        }
+      }
+      
+    }

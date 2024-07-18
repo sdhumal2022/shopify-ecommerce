@@ -1,0 +1,124 @@
+@import '../../styles/globalSass/variable.scss';
+
+.cart-heading{
+    font-size: 4.8rem;
+    font-family: $font-bold;
+    color:#172026;
+    text-align: center;
+    margin-top: 10rem;
+    @media only screen and (max-width:$media-mobile){
+        font-size: 2.8rem;
+        margin-top: 3rem;
+    }
+}
+.cart-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    @media only screen and (max-width:$media-mobile){
+        flex-direction: column;
+    }
+    .cart-list{
+        width: 70%;
+        @media only screen and (max-width:$media-mobile){
+            width: 100%;
+        }
+        .cart-item{
+            display: flex;
+            
+        }
+        .pro-img{
+            width: 16.6rem;
+            height: 19.9rem;
+            img{
+                width: 100%;
+            }
+        }
+        .content-wrap{
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            padding-left: 2rem;
+            @media only screen and (max-width:$media-mobile){
+                width: 100%;
+                flex-direction: column;
+            }
+            .description-sec{
+                .product-title{
+                    font-size: 2rem;
+                    font-family: $font-semiBold;
+                    color: #172026;
+                }
+                .desc{
+                    font-size:1.6rem;
+                    font-family: $font-regular;
+                    color: #172026;
+                }
+            }
+        }
+    }
+    .editSec{
+        margin-top: 3rem;
+        .edit-item{
+            margin-bottom: 1rem;
+        }
+        .edit-item{
+            display: flex;
+        }
+        .icon-img{
+            padding-right: 1rem;
+        }
+        .icon-text{
+            font-size: 1.4rem;
+        }
+    }
+}
+.price-summery{
+    box-shadow: 0px 0px 8px #0000000D;
+    border: 1px solid #D1D3D6;
+    border-radius: 2px;
+    width: 30%;
+    padding: 3.2rem;
+    @media only screen and (max-width:$media-mobile){
+        width: 87%;
+        padding: 1rem;
+}
+.price-heading{
+    font-size: 2rem;
+    color: #172026;
+    font-family: $font-semiBold;
+}
+.summery-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .summery-item{
+        width: 50%;
+        font-size: 1.6rem;
+        color: #172026;
+        font-family: $font-regular;
+        margin-bottom: 1.6rem;
+    &.price{
+        text-align: right;
+    }
+    &.total-price{
+        font-family: $font-bold;
+    }
+    }
+}
+.checkout-btn{
+    background: #1363DF;
+    border-radius: 10px;
+    margin: 0 auto;
+    color: $clr-root;
+    font-size: 1.4rem;
+    font-family: $font-bold;
+    display: flex;
+    padding: 1rem 8.5rem;
+}
+.pay-pal-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.4rem;
+}
+}
